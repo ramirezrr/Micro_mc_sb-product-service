@@ -1,0 +1,26 @@
+application:
+  title: @project.name@
+  version: @project.version@
+  description: @project.description@
+  author: Rodrigo R.R.
+
+
+#other
+spring:
+  h2:
+    console:
+      enabled: true # Habilita la consola H2 en http://localhost:8080/h2-console
+  datasource:
+    url: jdbc:h2:mem:mydb # Base de datos en memoria
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver # Driver para conectar a H2
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect # Dialecto específico de H2 para Hibernate
+    defer-datasource-initialization: true # Esto se usa para asegurarse de que las migraciones/creación de tablas se ejecuten después de que la base de datos esté completamente lista
+
+  sql:
+    init:
+      data-locations: classpath:bd/data.sql #Indicas la ubicacion del archivo sql q se ejecutara
