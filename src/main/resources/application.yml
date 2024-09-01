@@ -1,0 +1,26 @@
+application:
+  title: @project.name@
+  version: @project.version@
+  description: @project.description@
+  author: Rodrigo R.R.
+
+
+
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect # Especifica el dialecto de Hibernate para PostgreSQL. Esto asegura que Hibernate genere consultas SQL compatibles con la sintaxis de PostgreSQL.
+        format_sql: true # Activa el formato de las consultas SQL generadas, lo que facilita la lectura y depuración.
+    hibernate:
+      ddl-auto: none # Configura Hibernate para no realizar ninguna acción automática en el esquema de la base de datos (ni crear, ni actualizar, ni validar tablas). Esto es útil cuando se maneja el esquema de la base de datos manualmente o a través de otros mecanismos.
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pruebas # URL de conexión a la base de datos PostgreSQL. Incluye el host, el puerto y el nombre de la base de datos.
+    username: postgres # Nombre de usuario para conectarse a la base de datos.
+    password: postgres # Contraseña para el nombre de usuario especificado.
+  sql:
+    init:
+      mode: always # Indica que el archivo de inicialización SQL (data.sql) debe ejecutarse siempre al iniciar la aplicación, no solo en el arranque si la base de datos está vacía.
+      schema-locations: classpath:bd/data.sql # Ubicación del archivo SQL que se ejecutará para inicializar la base de datos. En este caso, el archivo se encuentra en el directorio de recursos del classpath.
+      continue-on-error: false # Permite que la inicialización continúe incluso si se encuentran errores durante la ejecución del archivo SQL. Esto puede ser útil para evitar que la aplicación se detenga debido a errores menores en el script SQL.
+
