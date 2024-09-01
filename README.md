@@ -74,3 +74,22 @@ SELECT *
 FROM INFORMATION_SCHEMA.SEQUENCES;
 
 ```
+
+http://localhost:8080/h2-console/
+```http request
+### POST request to example server
+POST http://localhost:8080/furniture
+Content-Type: application/json
+
+{
+  "furnitureName": "",
+  "furnitureDescription": "",
+  "furnitureFechaRegistro": ""
+}
+
+### GET request to example server
+GET http://localhost:8080/furniture
+Content-Type: application/json
+
+```
+
