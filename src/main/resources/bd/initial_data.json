@@ -1,0 +1,17 @@
+[
+  {
+    "furniture_name": "Chair",
+    "furniture_description": "Wooden chair",
+    "furniture_date_register": "2024-09-01T10:10:10Z"
+  },
+  {
+    "furniture_name": "Table",
+    "furniture_description": "New chair",
+    "furniture_date_register": "2024-09-01T10:10:10Z"
+  },
+  {
+    "furniture_name": "Square",
+    "furniture_description": "New picture",
+    "furniture_date_register": "2024-09-01T10:10:10Z"
+  }
+]
