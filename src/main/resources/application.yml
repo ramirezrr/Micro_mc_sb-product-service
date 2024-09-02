@@ -1,0 +1,13 @@
+application:
+  title: @project.name@
+  version: @project.version@
+  description: @project.description@
+  author: Rodrigo R.R.
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:pasw@localhost:27017/pruebas-db-2?authSource=admin
+      database: pruebas-db-2
+server:
+  port: 9091

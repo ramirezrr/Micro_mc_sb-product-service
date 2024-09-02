@@ -1,0 +1,17 @@
+[
+    {
+        "grocery_name": "potato",
+        "grocery_description": "great",
+        "grocery_date_register": "2024-09-01T10:10:10Z"
+    },
+    {
+        "grocery_name": "orange",
+        "grocery_description": "sweet",
+        "grocery_date_register": "2024-09-01T10:10:10Z"
+    },
+    {
+        "grocery_name": "apple",
+        "grocery_description": "red",
+        "grocery_date_register": "2024-09-01T10:10:10Z"
+    }
+]
